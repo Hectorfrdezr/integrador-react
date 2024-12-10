@@ -1,5 +1,5 @@
 {
-  "name": "react-integrador",
+  "name": "e1-react",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -10,14 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "component": "^1.1.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-router-dom": "^7.0.2",
-    "style": "^0.0.3",
-    "styled": "^1.0.0",
-    "styled-component": "^2.8.0",
-    "styled-components": "^6.1.13"
+    "react-icons": "^5.2.1",
+    "react-modal": "^3.16.1",
+    "react-router-dom": "^6.24.1",
+    "styled-components": "^6.1.11"
   },
   "devDependencies": {
     "@types/react": "^18.2.66",
