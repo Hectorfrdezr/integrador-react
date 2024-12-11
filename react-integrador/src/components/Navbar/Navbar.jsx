@@ -69,7 +69,7 @@ function Navbar() {
 
         {cartVisible && <Overlay onClick={toggleCart} />}
 
-        <CartDropdown visible={cartVisible.toString()}>
+        <CartDropdown visible={cartVisible.toString}>
         <h2>Tu Carrito</h2>
         {cartItems.length === 0 ? (
           <p>No hay artículos en el carrito.</p>
@@ -99,7 +99,8 @@ function Navbar() {
 
 const NavContainer = styled.nav`
   .nav-logo{
-    width: 6%;
+    width: 5%;
+    border-radius: 50;
     cursor: pointer;
     @media (max-width: 768px){
       width: 12%;
@@ -109,19 +110,20 @@ const NavContainer = styled.nav`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #141619;
+    background-color: #350a06;
     padding: 0px 45px;
     position: fixed;
     width: 100%;
     z-index: 999;
   }
   a{
-    color: #fff;
+    color: #b76e79;
     text-decoration: none;
     margin-right: 1rem;
+    font-weight:bold;
   }
   a:hover{
-    color: #fcda30;
+    color: #d6b1c1;
     text-decoration-line: underline;
   }
   .menu{
@@ -150,7 +152,7 @@ const NavContainer = styled.nav`
       }
     }
     @media (max-width: 768px) {
-      .links {
+      .Links {
         display: none;}
       }
   .links{
@@ -160,8 +162,9 @@ const NavContainer = styled.nav`
       margin-left: auto;
       margin-right: auto;
       text-align: center;
-      transition: all .10s ease;
+      transition: all .5s ease;
       right: 0;
+      z-index: -1;
       a{
         font-size: 2rem;
         margin-top: 1rem;
@@ -198,12 +201,12 @@ const CartDropdown = styled.div.attrs(props => ({
   right: 0;
   top: 60px;
   width: 300px;
-  background-color: #272626;
+  background-color: #3e1111;
   border: 1px solid #ccc;
   border-radius: 0 0 8px 8px ;
   padding: 1rem;
   box-shadow: 0 2px 10px rgba(0, 0,0, 0.1);
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.5s ease-in-out;
   z-index: 999;
   h2 {
     margin-bottom: 1rem;
@@ -248,13 +251,13 @@ const CartDropdown = styled.div.attrs(props => ({
 `;
 const Bg = styled.div`
 position: fixed ;
-background-color: #1d1f22;
+background-color: #3d0e0a;
 top: -1000px;
 left: -1000px;
 width: 100%;
 height: 100%;
 z-index: 1;
-transition: all .7s ease;
+transition: all .3s ease;
   &.active{
     top:0;
     left: 0;
@@ -264,7 +267,7 @@ transition: all .7s ease;
   }
 `
 const ShoppingCartIcon = styled(FaShoppingCart)`
-  color: white; 
+  color: #f7f6f6; 
   cursor: pointer;
   &:hover {
     color: #ccc; 
@@ -280,5 +283,6 @@ const ShoppingCartIcon = styled(FaShoppingCart)`
   z-index: 708; 
   cursor: pointer;
 `;
+
 
 export default Navbar

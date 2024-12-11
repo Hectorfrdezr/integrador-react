@@ -45,7 +45,6 @@ function ProductList() {
         ))}
       </div>
 
-      {/* Modal para confirmaciones */}
       <Modal 
         message={modalMessage}
         isVisible={isModalVisible}
