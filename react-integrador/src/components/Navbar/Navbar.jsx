@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Burger from "../menu/Burger";
 import {Outlet,Link, useLocation} from "react-router-dom";
 import { CartContext } from '../../context/CartContext';
-import { FaShoppingCart } from 'react-icons/fa';
+import { FaShoppingCart } from "react-icons/fa";
 import logo  from '../../../public/img/logo.png';
 
 function Navbar() {
@@ -60,7 +60,7 @@ function Navbar() {
               <Burger clicked={clicked} handleClick={handleClick}/>  
             </div> 
             <div className="cart">
-              <ShoppingCartIcon size={24} onClick={toggleCart}/>
+              <ShoppingCartIcon size={28} onClick={toggleCart}/>
               {cartItems.length > 0 && <span>{cartItems.length}</span>}
           </div>
          </div>  
@@ -69,7 +69,7 @@ function Navbar() {
 
         {cartVisible && <Overlay onClick={toggleCart} />}
 
-        <CartDropdown visible={cartVisible.toString}>
+        <CartDropdown $visible={cartVisible}>
         <h2>Tu Carrito</h2>
         {cartItems.length === 0 ? (
           <p>No hay artículos en el carrito.</p>
@@ -100,7 +100,7 @@ function Navbar() {
 const NavContainer = styled.nav`
   .nav-logo{
     width: 5%;
-    border-radius: 50;
+    border-radius: 50px;
     cursor: pointer;
     @media (max-width: 768px){
       width: 12%;
@@ -280,7 +280,7 @@ const ShoppingCartIcon = styled(FaShoppingCart)`
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5); 
   backdrop-filter: blur(5px); 
-  z-index: 708; 
+  z-index: 792; 
   cursor: pointer;
 `;
 
