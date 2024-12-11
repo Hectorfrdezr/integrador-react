@@ -8,7 +8,7 @@ function Categorias() {
        <div className="container">
               <h2>Promociones y Ofertas</h2>
               <div className="catego-container">
-                    <CardHome title="PIDE TUS COMBOS FAVORITOS" btn="Ordenar" description="Elige el combo que mas te guste y disfrutalo en casa." imgSrc="/img/comida.png" />
+                    <CardHome title="TU COMIDA FAVORITOS" btn="Ordenar" description="Siempre a tiempo ." imgSrc="/img/comida.png" />
                     <CardHome title="TU BEBIDA FAVORITA" btn="Ordenar" description="Siempre para acompañar tu combo" imgSrc="/img/bebidas.png"  />
                     <CardHome title="UN POSTRE" btn="Ordenar"  description="Nunca puede faltar para completar el dia." imgSrc="/img/helado.png" />                    
                 </div>

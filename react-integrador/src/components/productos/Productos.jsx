@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import pedido from "../../../public/img/pedido.png"
+
 import { Link } from 'react-router-dom'
 
 function Productos() {
@@ -8,7 +8,7 @@ function Productos() {
         <Product>
           <div className="container">
             <div className="pedido-contain">
-            <img src={pedido} alt="" />
+            {/* <img src={pedido} alt="" /> */}
             <div className="pedido-info">
                 <h3>ORDENAR NUNCA FUE TAN FACIL.</h3>
                 <h2>

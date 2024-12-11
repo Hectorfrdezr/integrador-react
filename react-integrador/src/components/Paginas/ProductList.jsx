@@ -1,36 +1,17 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import Card from '../card/Card';
 import styled from 'styled-components';
-import products from '../data/products/';  
+import products from '../data/products';
+import { CartContext } from '../../context/CartContext';  
 import Modal from '../modal/Modal';       
 
 function ProductList() {
-  const [cart, setCart] = useState([]);
+  const { cartItems, addToCart, removeFromCart, clearCart } = useContext(CartContext);
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [modalMessage, setModalMessage] = useState('');
   const [modalCallback, setModalCallback] = useState(null);
-
-  const addToCart = (product) => {
-    const existingItem = cart.find(item => item.title === product.title);
-    if (existingItem) {
-      setCart(cart.map(item =>
-        item.title === product.title
-          ? { ...item, quantity: item.quantity + 1 }
-          : item
-      ));
-    } else {
-      setCart([...cart, { ...product, quantity: 1 }]);
-    }
-  };
-
-  const removeFromCart = (productTitle) => {
-    setCart(cart.filter(item => item.title !== productTitle));
-  };
-
-  const clearCart = () => {
-    setCart([]);
-  };
-
+ 
+                                                                                      
   const handleCheckout = () => {
     setModalMessage('¿Desea finalizar la compra?');
     setModalCallback(() => () => {
@@ -64,7 +45,7 @@ function ProductList() {
         ))}
       </div>
 
-     
+      {/* Modal para confirmaciones */}
       <Modal 
         message={modalMessage}
         isVisible={isModalVisible}

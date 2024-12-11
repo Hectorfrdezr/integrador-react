@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from "styled-components"
-import mapa from "../../../public/img/mapa.png"
+// import mapa from "../../../public/img/mapa.png"
 import { Link } from 'react-router-dom'
 
 function Ayuda() {
@@ -13,7 +13,7 @@ function Ayuda() {
                 <Link to="About">Historia</Link>
                 <Link to="Registro">Contáctanos</Link>
             </div>
-            <img src={mapa} alt="" />
+            {/* <img src={mapa} alt="" /> */}
         </div>
     </Ayud>
   )

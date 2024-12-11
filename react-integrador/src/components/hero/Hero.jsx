@@ -1,6 +1,6 @@
 import React from 'react'
-import styled from "styled-components"
-import hero from "/img/card.png"
+import styled from 'styled-components'
+
 
 function Hero() {
   return (
@@ -25,7 +25,6 @@ const Heroinfo = styled.div`
     align-items: center;
     text-align: center;
     background-size: contain;
-    background-image: url(${hero});
     background-position: center center;
     @media(max-width:980px){
           height: 400px;

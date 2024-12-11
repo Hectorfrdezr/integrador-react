@@ -33,7 +33,7 @@ background-color: #151515;
 box-shadow: 0 5px 15px rgba(254, 254, 254, 0.1);
 transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
 width: 28%;
-height: auto;
+height: 500px;
 cursor: pointer;
 &:hover{
 transform: translateY(-10px);
@@ -58,7 +58,7 @@ height: 380px;
 }
 
 img{
-width: 100%;
+width: 80%;
 object-fit:cover;
 }
 h3{    

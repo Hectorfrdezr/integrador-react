@@ -57,7 +57,7 @@ const CardInfo = styled.div`
     }
 
   img{
-    width: 70%;
+    width: 80%;
     object-fit:cover;
   }
   h3{    
@@ -109,7 +109,7 @@ const CardInfo = styled.div`
           font-size:  14px;
         }
   }
-  a{
+  button{
     
     display: inline-block;
                 outline: 0;
