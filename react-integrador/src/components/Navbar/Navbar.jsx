@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import Burger from "../menu/Burger";
 import {Outlet,Link, useLocation} from "react-router-dom";
 import { CartContext } from '../../context/CartContext';
-import { FaShoppingCart } from "react-icons/fa";
+import {FaShoppingCart}  from "react-icons/fa";
 import logo  from '../../../public/img/logo.png';
 
 function Navbar() {
@@ -131,10 +131,10 @@ const NavContainer = styled.nav`
     @media(min-width: 778px){
         display: none;
     } 
-  }
+    }
   .cart {
       position: relative;
-     
+      margin-right: 80px;
       a {
         color: white;
         text-decoration: none;
@@ -245,7 +245,7 @@ const CartDropdown = styled.div.attrs(props => ({
     border-radius: 5px;
     cursor: pointer;
     &:hover {
-      background-color: rgba(255, 218, 87, 0.8); /* Fondo más claro al pasar el ratón */
+      background-color: rgba(255, 218, 87, 0.8); 
     }
   }
 `;
@@ -271,7 +271,8 @@ const ShoppingCartIcon = styled(FaShoppingCart)`
   cursor: pointer;
   &:hover {
     color: #ccc; 
-  }`
+  }
+  `
   const Overlay = styled.div`
   position: fixed;
   top: 0;

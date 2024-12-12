@@ -1,11 +1,16 @@
 import React from 'react'
 import styled from 'styled-components'
+import bgvideo from '../../video/bgvino.mp4'
+
 
 
 function Hero() {
   return (
     <Heroinfo>
     <div className="portada">
+      <video autoPlay loop muted >
+        <source src={bgvideo} type="video/mp4"/>
+      </video>
         <div className="hero-info">
             <h1>El Buen Sabor</h1>
             <h3>Sabor en cada bocado.</h3>
