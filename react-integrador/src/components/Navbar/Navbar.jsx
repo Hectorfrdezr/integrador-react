@@ -104,7 +104,7 @@ const NavContainer = styled.nav`
     padding: 3px;
     cursor: pointer;
     @media (max-width: 768px){
-      width: 5%;
+      width: 12%;
       border-radius: 50px;
     }
     }
@@ -258,7 +258,7 @@ top: -1000px;
 left: -1000px;
 width: 100%;
 height: 100%;
-z-index: 1;
+z-index: -1;
 transition: all .3s ease;
   &.active{
     top:0;
