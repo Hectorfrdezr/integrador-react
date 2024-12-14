@@ -101,9 +101,11 @@ const NavContainer = styled.nav`
   .nav-logo{
     width: 5%;
     border-radius: 50px;
+    padding: 3px;
     cursor: pointer;
     @media (max-width: 768px){
-      width: 12%;
+      width: 5%;
+      border-radius: 50px;
     }
     }
   .header{

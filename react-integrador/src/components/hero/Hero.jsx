@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import bgvideo from '../../video/bgvino.mp4'
+
 
 
 
@@ -8,9 +8,6 @@ function Hero() {
   return (
     <Heroinfo>
     <div className="portada">
-      <video autoPlay loop muted >
-        <source src={bgvideo} type="video/mp4"/>
-      </video>
         <div className="hero-info">
             <h1>El Buen Sabor</h1>
             <h3>Sabor en cada bocado.</h3>
@@ -24,18 +21,17 @@ function Hero() {
 const Heroinfo = styled.div`
    .portada{
     width: 100%;
-    height: 480px;
     display: flex;
     justify-content:center;
     align-items: center;
     text-align: center;
-    background-size: contain;
-    background-position: center center;
+    
+  
     @media(max-width:980px){
-          height: 400px;
+          width: 100%;
       }
         @media(max-width:625px){
-          height: 250px;
+          width: 100%;
         }
 }
 .hero-info{

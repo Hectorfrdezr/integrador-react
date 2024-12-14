@@ -1,20 +1,30 @@
-import Hero from "../hero/Hero"
-import Productos from "../productos/Productos";
-import Categorias from './../categorias/Categorias';
-import Ayuda from './../ayuda/Ayuda';
-import Footer from './../footer/Footer';
 
+import bgvideo  from "../../video/bgvino.mp4"
+import styled from "styled-components"
 
 function Home() {
   return (
-    <>  
-        <Hero/>
-        <Categorias/>
-        <Productos/>
-        <Ayuda/>
-        <Footer/>
-    </>
+    <Portada>
+       <div className="bg"> 
+          <video autoPlay loop muted >
+            <source src={bgvideo} type="video/mp4"/>
+          </video>
+      </div>
+    </Portada>
   )
 }
+const Portada = styled.div `
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+.bg{
+  width: 100%;
+  display: flex auto;
+  border: 1px red solid;
+} 
+
+`;
 
 export default Home
