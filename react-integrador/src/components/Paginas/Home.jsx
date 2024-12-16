@@ -10,12 +10,19 @@ function Home() {
             <source src={bgvideo} type="video/mp4"/>
           </video>
       </div>
+
     </Portada>
   )
 }
 const Portada = styled.div `
   width: 100%;
   display: flex;
+  z-index: -1;
+ `
+ const Iniciar = styled.div`
+  
+
+
 `;
 
 export default Home

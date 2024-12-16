@@ -99,7 +99,7 @@ function Navbar() {
 
 const NavContainer = styled.nav`
   .nav-logo{
-    width: 5%;
+    width: 4%;
     border-radius: 50px;
     padding: 3px;
     cursor: pointer;
