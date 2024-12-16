@@ -1,5 +1,6 @@
 
 import Navbar from '../Navbar/Navbar';
+
 function Layaot() {
   return (
     <>

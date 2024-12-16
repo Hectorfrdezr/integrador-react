@@ -104,8 +104,12 @@ const NavContainer = styled.nav`
     padding: 3px;
     cursor: pointer;
     @media (max-width: 768px){
-      width: 12%;
       border-radius: 50px;
+      padding: 25px;
+    }
+    @media (max-width: 525px){
+      width : 8%;
+      padding: 16px;
     }
     }
   .header{
@@ -113,15 +117,15 @@ const NavContainer = styled.nav`
     align-items: center;
     justify-content: space-between;
     background-color: #350a06;
-    padding: 0px 45px;
-    position: fixed;
+    position:fixed;
     width: 100%;
     z-index: 999;
+  
   }
   a{
     color: #b76e79;
     text-decoration: none;
-    margin-right: 1rem;
+    margin-right: 20px;
     font-weight:bold;
   }
   a:hover{
@@ -136,7 +140,9 @@ const NavContainer = styled.nav`
     }
   .cart {
       position: relative;
-      margin-right: 80px;
+      right:20%;
+      ;
+      
       a {
         color: white;
         text-decoration: none;
@@ -201,10 +207,10 @@ const CartDropdown = styled.div.attrs(props => ({
 }))`
   position: fixed;
   right: 0;
-  top: 60px;
-  width: 300px;
+  top: 134px;
+  width: 350px;
   background-color: #3e1111;
-  border: 1px solid #ccc;
+  border: 0 1px 1px 1px solid #ccc;
   border-radius: 0 0 8px 8px ;
   padding: 1rem;
   box-shadow: 0 2px 10px rgba(0, 0,0, 0.1);
@@ -257,8 +263,7 @@ background-color: #3d0e0a;
 top: -1000px;
 left: -1000px;
 width: 100%;
-height: 100%;
-z-index: -1;
+z-index: 1;
 transition: all .3s ease;
   &.active{
     top:0;

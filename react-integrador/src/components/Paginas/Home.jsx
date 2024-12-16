@@ -16,15 +16,6 @@ function Home() {
 const Portada = styled.div `
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: center;
-
-.bg{
-  width: 100%;
-  display: flex auto;
-  border: 1px red solid;
-} 
-
 `;
 
 export default Home
