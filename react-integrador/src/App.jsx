@@ -24,8 +24,9 @@ function App() {
 
 const AppStyled = styled.div`
   width: 100%;
-  display: flex;
-  
+  min-height: 100vh; 
+  margin: 0;
+  padding: 0;
 `
 
 export default App

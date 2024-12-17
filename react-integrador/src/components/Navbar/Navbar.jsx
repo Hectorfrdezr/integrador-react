@@ -104,6 +104,7 @@ const NavContainer = styled.nav`
     padding: 3px;
     cursor: pointer;
     @media (max-width: 768px){
+      width: 8%;
       border-radius: 50px;
       padding: 25px;
     }
@@ -120,7 +121,7 @@ const NavContainer = styled.nav`
     position:fixed;
     width: 100%;
     z-index: 999;
-  
+    padding: 0 20px ;
   }
   a{
     color: #b76e79;
@@ -134,6 +135,7 @@ const NavContainer = styled.nav`
   }
   .menu{
     width: 12%;
+    margin-right: 65px;
     @media(min-width: 778px){
         display: none;
     } 
@@ -207,8 +209,8 @@ const CartDropdown = styled.div.attrs(props => ({
 }))`
   position: fixed;
   right: 0;
-  top: 134px;
-  width: 350px;
+  margin-top: 70px;
+  width: 250px;
   background-color: #3e1111;
   border: 0 1px 1px 1px solid #ccc;
   border-radius: 0 0 8px 8px ;
@@ -275,6 +277,7 @@ transition: all .3s ease;
 `
 const ShoppingCartIcon = styled(FaShoppingCart)`
   color: #f7f6f6; 
+  width: 100%;
   cursor: pointer;
   &:hover {
     color: #ccc; 
