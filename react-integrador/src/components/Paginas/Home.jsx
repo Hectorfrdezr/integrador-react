@@ -6,26 +6,31 @@ function Home() {
     <Portada>
       <video autoPlay loop muted className="video-background">
         <source src={bgvideo} type="video/mp4" />
-        Tu navegador no soporta el vídeo.
       </video>
     </Portada>
   );
 }
 
 const Portada = styled.div`
-  position: relative; 
+  position: absolute; 
   width: 100%;
   height: 100vh; 
+ 
 
   .video-background {
-    position:relative; 
+    position:relative;
     top: 0;
     left: 0;
     width: 100%; 
     height: 100%; 
     object-fit: cover;
-    z-index: -1; 
-  }
+    z-index: -1;
+    
+    @media (max-width: 525px){
+      width:100%;
+      
+      }
+    }
 
   .content {
     position: relative; 

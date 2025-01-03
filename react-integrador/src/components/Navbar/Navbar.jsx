@@ -69,7 +69,7 @@ function Navbar() {
 
         {cartVisible && <Overlay onClick={toggleCart} />}
 
-        <CartDropdown $visible={cartVisible}>
+        <CartDropdown  $visible={cartVisible}>
         <h2>Tu Carrito</h2>
         {cartItems.length === 0 ? (
           <p>No hay artículos en el carrito.</p>
@@ -91,6 +91,7 @@ function Navbar() {
             <button onClick={clearCart}>Vaciar Carrito</button>
           </>
         )}
+        
       </CartDropdown>
         <Outlet/>
         </>
@@ -121,7 +122,7 @@ const NavContainer = styled.nav`
     position:fixed;
     width: 100%;
     z-index: 999;
-    padding: 0 20px ;
+    padding: 0 50px;
   }
   a{
     color: #b76e79;
@@ -142,8 +143,7 @@ const NavContainer = styled.nav`
     }
   .cart {
       position: relative;
-      right:20%;
-      ;
+      margin-right: 10%;
       
       a {
         color: white;
@@ -155,17 +155,18 @@ const NavContainer = styled.nav`
         top: -8px;
         right: -10px;
         background-color: rgb(255, 218, 87);
-        color: #111010;
+        color: #e7e3e3;
         border-radius: 50%;
         padding: 2px 6px;
         font-size: 12px;
       }
     }
+
     @media (max-width: 768px) {
-      .Links {
+      .links {
         display: none;}
       }
-  .links{
+    .links{
       position: fixed;
       top: -700px;
       left: -2000px;
@@ -188,7 +189,7 @@ const NavContainer = styled.nav`
           display: inline;
         }
       }  
-  }
+    }
   .links.active{
     width: 100%;
     display: block;
@@ -207,9 +208,10 @@ const CartDropdown = styled.div.attrs(props => ({
     transform: props.$visible ? 'translateX(0)' : 'translateX(100%)',
   },
 }))`
+  
   position: fixed;
   right: 0;
-  margin-top: 70px;
+  margin-top:65px;
   width: 250px;
   background-color: #3e1111;
   border: 0 1px 1px 1px solid #ccc;
@@ -218,6 +220,7 @@ const CartDropdown = styled.div.attrs(props => ({
   box-shadow: 0 2px 10px rgba(0, 0,0, 0.1);
   transition: transform 0.5s ease-in-out;
   z-index: 999;
+  
   h2 {
     margin-bottom: 1rem;
     color: #ccc;
@@ -258,6 +261,7 @@ const CartDropdown = styled.div.attrs(props => ({
       background-color: rgba(255, 218, 87, 0.8); 
     }
   }
+
 `;
 const Bg = styled.div`
 position: fixed ;
