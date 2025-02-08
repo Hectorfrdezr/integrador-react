@@ -1,0 +1,13 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: popins,sans-serif;
+  scroll-behavior: smooth;
+}
+body{
+  background: linear-gradient(#171718,#31234e);
+  width: 100%;
+  background-repeat: no-repeat;
+
+}
