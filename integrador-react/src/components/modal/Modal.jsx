@@ -7,7 +7,7 @@ const Modal = ({ message, isVisible, onConfirm, onClose }) => {
   return (
     <ModalOverlay>
     <ModalContainer>
-      <ModalMessage>{message}</ModalMessage>
+      <setModalMessage>{message}</setModalMessage>
       <ModalButtons>
         {onConfirm && <ConfirmButton onClick={onConfirm}>Confirmar</ConfirmButton>}
         <CancelButton onClick={onClose}>Cancelar</CancelButton>
@@ -34,22 +34,27 @@ const ModalContainer = styled.div`
   background: white;
   padding: 20px;
   border-radius: 10px;
+  margin-left:20px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
   text-align: center;
-  max-width: 400px;
+  max-width: 300px;
   width: 100%;
+  @media(max-width:525px){
+    margin-left:60px;
+  }
 `;
 
-const ModalMessage = styled.p`
+const setModalMessage = styled.p`
   font-size: 18px;
   color: black;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 `;
 
 const ModalButtons = styled.div`
   display: flex;
   justify-content: center;
   gap: 10px;
+  margin-top:20px;
 `;
 
 const Button = styled.button`

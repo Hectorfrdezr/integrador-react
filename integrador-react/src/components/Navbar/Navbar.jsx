@@ -169,8 +169,9 @@ const NavContainer = styled.nav`
       padding: 5px;
     }
     @media (max-width: 525px){
-      width : 8%;
+      width : 12%;
       padding: 2px;
+      margin-left:20px
     }
     }
   .header{
@@ -293,6 +294,7 @@ const CartDropdown = styled.div.attrs(props => ({
   transition: transform 0.5s ease-in-out;
   z-index: 999;
   justify-content: center;
+  align-items: center;
   
   p{
     color: #ccc;
@@ -376,22 +378,36 @@ const CartDropdown = styled.div.attrs(props => ({
     flex-grow: 1;
     max-height: 350px ;
     overflow-y: auto; 
-    margin-bottom: 10px;
+    margin-bottom: 30px;
+    justify-content:center;
+    @media(max-width:525px){
+      max-width:320px;
+      margin-left:80px
+    }
   }
-.totales{
-  
-  font-weight: bold;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  gap: 8px;
-}
+  .totales{ 
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px;
+    padding: 10px 0;
+    margin-top:50x;
+    border-top:2px white solid;
+    @media(max-width:525px){
+    max-width:320px;
+    margin-left:80px;
+  }
+} 
 .accionDiv{
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 30px;
+  @media(max-width:525px){
+    margin-left:80px;
+  }
 }
 .acciones{
   
